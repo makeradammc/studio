@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeradam's Studio - MC Addons</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="favicon.ico">
+    <style>
+      body {
+        background-image: url("images/background.png"); 
+        background-size: cover;
+        background-position: center; 
+        background-attachment: fixed; 
+        color: white;
+        font-family: "Minecraft", monospace;
+      }
+      .header {
+        background: rgba(20,20,20,0.8);
+        border: 2px solid #00d62c;
+        border-radius: 6px;
+        padding: 5px 10px;
+        width: 1200px;
+        margin-bottom: 10px;
+		position: absolute;
+		height: 70px;
+      }
+	  .sidebar {
+        background: rgba(20, 20, 20, 0.8);
+		border: 2px solid #0045ff;
+		border-radius: 6px;
+		padding: 5px 10px;
+		width: 260px;
+		margin-bottom: 10px;
+		position: absolute;
+		top: 100px;
+		flex-direction: column;
+		display: flex
+      }
+	  .sidebar-icons{
+		flex-direction: column;
+		display: flex;
+		position: absolute;
+		top: 166px;
+		left: 230px;
+	  }
+	  .sidebar-low {
+        background: rgba(20, 20, 20, 0.8);
+		border: 2px solid #0045ff;
+		border-radius: 6px;
+		padding: 5px 10px;
+		width: 260px;
+		margin-bottom: 10px;
+		position: absolute;
+		top: 420px;
+		flex-direction: column;
+		display: flex;
+		position: absolute;
+      }
+	  .main {
+        background: rgba(20, 20, 20, 0.8);
+		border: 2px solid #999999;
+		border-radius: 6px;
+		padding: 5px 10px;
+		width: 909px;
+		margin-bottom: 10px;
+		position: absolute;
+		top: 100px;
+		left: 300px;
+      }
+	  .title {
+		position: relative;
+		left: 70px;
+		bottom: 90px;
+	  }
+	  #mobile-sidebar {
+		position: absolute;
+		top: 100px;
+		flex-direction: column;
+		display: flex;
+      }
+	  #side {
+	  }
+	  #side.active {
+		display: flex;
+		z-index: 2;
+		position: absolute;
+		top: 0px;
+		transform: translate(0);
+	  }
+      
+    </style>
+  </head>
+  <body>
+  
+  <div class="header">
+	
+    <img id="logo" src="images/icon.png" width=64px>
+	<h1><b class="title">Makeradam's Studio - Bedrock Addons</b><h1>
+	
+  </div>
+  <div id="mobile-sidebar">
+	<img id="sidebar-button" src="images/ui/2_side.png" style="cursor: pointer; position: absolute; z-index: 3; top: 4px; left: 4px;" width=32px;>
+  </div>
+  <div id="side">
+	<div class="sidebar">
+			<h2>--INDEX--</h2>
+			<b>⌂<a href="index.html">Home Page</a></b>
+			<p>⏵<a href="tbsbe.html">TBSBE</a></p>
+			<p>⏵<a href="tbotv.html">TBoTV</a></p>
+			<p>⏵<a href="nmjar.html">no_moon.jar BE</a></p>
+			<p>⏵<a href="ooojar.html">000.jar BE</a></p>
+	</div>
+	<div class="sidebar-icons">
+		<img id="addon-icon" src="images/ui/1_side.png" width=32px style="position: relative; left: 10px">
+		<img id="addon-icon" src="images/addons/tbsbe-icon.png" width=32px style="padding: 11px;">
+		<img id="addon-icon" src="images/addons/tbotv-icon.png" width=32px style="padding: 11px;">
+		<img id="addon-icon" src="images/addons/nmjar-icon.png" width=32px style="padding: 11px;">
+		<img id="addon-icon" src="images/addons/ooojar-icon.png" width=32px style="padding: 11px;">
+	</div>
+	<div class="sidebar-low">
+		<h2 style="font-size: 20px;">--EXTERNAL LINKS--</h2>
+		<p>⏵<a href="https://youtube.com/@adam-e2u7l">Youtube</a></p>
+		<p>⏵<a href="https://www.tiktok.com/@adam_e2u7l?_r=1&_t=ZN-94nUslofYCk">TikTok</a></p>
+		<p>⏵<a href="https://discord.gg/VNNPnTKP26">Discord</a></p>
+	</div>
+  </div>
+  <div class="main">
+	
+    <h1>Makeradam's Addons</h1>
+	
+	<p>Welcome to the Minecraft Addons page of my projects, on the sidebar you can find my most recent projects with their respective pages, check them out!</p>
+	
+	<p>All my Minecraft projects are made of passion, no one pays me for those, if you find a bug or want to give a suggestion feel free to do it.</p>
+	
+	<h2>Programs i use</h2>
+	<ul>
+		<li>Blockbench - 3D modeling, Animating</li>
+		<li>Paint.NET - Texturing</li>
+		<li>Visual Studio Code / Notepad++ - Scripting</li>
+		<li>VLC Media Player - Audio</li>
+		<li>SnowStorm - Particles</li>
+	</ul>
+	
+  </div>
+  
+  <script src="scripts/main.js"></script>
+  </body>
+</html>

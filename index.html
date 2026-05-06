@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeradam's Studio - Main Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="favicon.ico">
+    <style>
+      body {
+        background-image: url("images/background.png"); 
+        background-size: cover;
+        background-position: center; 
+        background-attachment: fixed; 
+        color: white;
+        font-family: "Minecraft", monospace;
+      }
+      .header {
+        background: rgba(20,20,20,0.8);
+        border: 2px solid #00d62c;
+        border-radius: 6px;
+        padding: 5px 10px;
+        width: 1200px;
+        margin-bottom: 10px;
+		position: absolute;
+		height: 70px;
+      }
+	  .sidebar {
+        background: rgba(20, 20, 20, 0.8);
+		border: 2px solid #0045ff;
+		border-radius: 6px;
+		padding: 5px 10px;
+		width: 260px;
+		margin-bottom: 10px;
+		position: absolute;
+		top: 100px;
+		flex-direction: column;
+		display: flex
+      }
+	  .sidebar-icons{
+		flex-direction: column;
+		display: flex;
+		position: absolute;
+		top: 173px;
+		left: 230px;
+	  }
+	  .sidebar-low {
+        background: rgba(20, 20, 20, 0.8);
+		border: 2px solid #0045ff;
+		border-radius: 6px;
+		padding: 5px 10px;
+		width: 260px;
+		margin-bottom: 10px;
+		position: absolute;
+		flex-direction: column;
+		display: flex;
+		position: absolute;
+		top: 290px;
+      }
+	  .main {
+        background: rgba(20, 20, 20, 0.8);
+		border: 2px solid #999999;
+		border-radius: 6px;
+		padding: 5px 10px;
+		width: 909px;
+		margin-bottom: 10px;
+		position: absolute;
+		top: 100px;
+		left: 300px;
+      }
+	  .title {
+		position: relative;
+		left: 70px;
+		bottom: 90px;
+	  }
+	  #mobile-sidebar {
+		position: absolute;
+		top: 100px;
+		flex-direction: column;
+		display: flex;
+      }
+	  #side {
+	  }
+	  #side.active {
+		display: flex;
+		z-index: 2;
+		position: absolute;
+		top: 0px;
+		transform: translate(0);
+	  }
+      
+    </style>
+  </head>
+  <body>
+  
+  <div class="header">
+	
+    <img id="logo" src="images/icon.png" width=64px>
+	<h1><b class="title">Makeradam's Studio</b><h1>
+	
+  </div>
+  <div id="mobile-sidebar">
+	<img id="sidebar-button" src="images/ui/2_side.png" style="cursor: pointer; position: absolute; z-index: 3; top: 4px; left: 4px;" width=32px;>
+  </div>
+  <div id="side">
+	<div class="sidebar">
+			<h2>--INDEX--</h2>
+			<p style="font-size: 14px;">⏵<a href="mc-addons.html">Minecraft Bedrock Projects</a></p>
+			<p ">⏵<a href="gmod-addons.html">Garry's Mod Projects</a></p>
+	</div>
+	<div class="sidebar-icons">
+		<img id="game-icon" src="images/games/minecraft.png" width=32px style="padding: 11px;">
+		<img id="game-icon" src="images/games/gmod.png" width=32px style="padding: 11px;">
+	</div>
+	<div class="sidebar-low">
+		<h2 style="font-size: 20px;">--EXTERNAL LINKS--</h2>
+		<p>⏵<a href="https://youtube.com/@adam-e2u7l">Youtube</a></p>
+		<p>⏵<a href="https://www.tiktok.com/@adam_e2u7l?_r=1&_t=ZN-94nUslofYCk">TikTok</a></p>
+		<p>⏵<a href="https://discord.gg/VNNPnTKP26">Discord</a></p>
+	</div>
+  </div>
+  <div class="main">
+	
+    <h1>Makeradam's Studio</h1>
+	
+  </div>
+  
+  <script src="scripts/main.js"></script>
+  </body>
+</html>
