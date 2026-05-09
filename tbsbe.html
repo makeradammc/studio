@@ -77,7 +77,7 @@
 		width: 909px;
 		margin-bottom: 10px;
 		position: absolute;
-		top: 290px;
+		top: 325px;
 		left: 300px;
 		display: none;
       }
@@ -180,6 +180,18 @@
 		font-size: 14px;
 		height: 32px;
 	}
+	.textarea {
+		background: rgba(0, 0, 0, 0.75);
+		border: 1px solid #d60000f;
+		color: #fff;
+		padding: 6px 16px;
+		border-radius: 6px;
+		font-family: 'Minecraft', monospace;
+		font-size: 14px;
+		height: 130px;
+		line-height: 1.5;
+		overflow: hidden;
+	}
       
     </style>
   </head>
@@ -223,6 +235,8 @@
 	
 	<p>My bedrock port of the java mod: The Broken Script, this addon is focused on remaking TBS 1:1 in bedrock edition</p>
 	
+	<p>This port is <i>free</i> and authorized by <b>RedstoneWizard08</b></p>
+	
 	<button class="dl-btn" >Download</button>
 	<button class="br-btn" onclick="bugReport()">Bug Report</button>
 	<button class="fb-btn" onclick="feedBack()">FeedBack</button>
@@ -232,7 +246,7 @@
   <div id="callback">
 	<h3 id="send-type">--Placeholder--</h3>
 	<p><input type="text" class="text-box" id="nickname" placeholder="Enter a Nickname" /></p>
-	<p><input type="text" class="text-box" id="text" placeholder="Text" /></p>
+	<p><textarea maxlength="600" class="textarea" placeholder="Text"></textarea></p>
 	<p><button class="send-btn" onclick="send()">Send</button></p>
 	<p id="status"></p>
   </div>
@@ -243,11 +257,13 @@
 		function bugReport() {
 			document.getElementById('callback').style.display = 'inline';
 			document.getElementById('send-type').textContent = 'Bug Report';
+			document.getElementById('send-type').style.color = '#d63d00';
 		}
 		
 		function feedBack() {
 			document.getElementById('callback').style.display = 'inline';
 			document.getElementById('send-type').textContent = 'FeedBack';
+			document.getElementById('send-type').style.color = '#d6d100';
 		}
 		
 		async function send() {
@@ -260,7 +276,7 @@
 		status.textContent = "❏ Elaborating...";
 		status.style.color= "#ff9206";
 	
-		const risposta = await fetch("", {
+		const risposta = await fetch("https://formspree.io/f/xrejyvrv", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({ Project: project, Type: sendtype , User: nickname, Text: text })
